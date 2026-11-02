@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XAUT Bot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b1020; --bg2:#121a33; --card:rgba(22,30,56,.78); --card2:#1a2442; --line:rgba(148,163,209,.14);
+    --text:#eef1fb; --mut:#94a0c4; --gold:#f2c14e; --gold2:#d9a12b; --goldsoft:rgba(242,193,78,.12);
+    --green:#34d399; --greensoft:rgba(52,211,153,.12); --red:#fb7185; --redsoft:rgba(251,113,133,.12);
+    --amber:#fbbf24; --shadow:0 8px 24px rgba(0,0,0,.28);
+  }
+  @media (prefers-color-scheme: light){:root{
+    --bg:#fbf7ee; --bg2:#f3ead7; --card:rgba(255,255,255,.92); --card2:#fff; --line:rgba(120,98,50,.16);
+    --text:#1f1a10; --mut:#7a6f58; --gold:#b8860b; --gold2:#9a6f00; --goldsoft:rgba(184,134,11,.10);
+    --green:#0f9d63; --greensoft:rgba(15,157,99,.10); --red:#d9364f; --redsoft:rgba(217,54,79,.09);
+    --amber:#b7791f; --shadow:0 6px 18px rgba(120,98,50,.12);
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--text);font:15px/1.45 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    background:radial-gradient(1200px 500px at 85% -10%,var(--goldsoft),transparent 60%),linear-gradient(180deg,var(--bg2),var(--bg) 420px);
+    background-color:var(--bg);min-height:100vh}
+  .wrap{max-width:880px;margin:0 auto;padding:18px 16px 28px}
+  header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:6px}
+  .brand{display:flex;align-items:center;gap:10px}
+  .coin{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:14px;color:#3a2a00;
+    background:radial-gradient(circle at 30% 30%,#ffe9a8,var(--gold) 55%,var(--gold2));box-shadow:0 0 0 2px rgba(242,193,78,.25),0 4px 14px rgba(242,193,78,.35)}
+  h1{font-size:19px;margin:0;letter-spacing:-.01em} h1 span{color:var(--gold)}
+  .pill{font-size:12px;font-weight:600;padding:5px 11px;border-radius:99px;white-space:nowrap;background:var(--card2);border:1px solid var(--line)}
+  .ok{color:var(--green);background:var(--greensoft);border-color:transparent}
+  .bad{color:var(--red);background:var(--redsoft);border-color:transparent}
+  .wait{color:var(--amber);background:var(--goldsoft);border-color:transparent}
+  .ok::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:1px;animation:pulse 1.6s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.6)}70%{box-shadow:0 0 0 7px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+  #sub{color:var(--mut);font-size:12.5px;margin:2px 0 14px}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px}
+  @media(min-width:640px){.grid{grid-template-columns:repeat(4,1fr)}}
+  .card{background:var(--card);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:12px;box-shadow:var(--shadow)}
+  .grid .card{margin:0;position:relative;overflow:hidden}
+  .grid .card::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);opacity:.85}
+  .lbl{font-size:11.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+  .val{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px;letter-spacing:-.01em}
+  h2{font-size:12px;margin:0 0 10px;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:14px}
+  th,td{text-align:right;padding:8px 4px;border-bottom:1px solid var(--line)} th:first-child,td:first-child{text-align:left}
+  tr:last-child td{border-bottom:0}
+  th{font-size:11px;color:var(--mut);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+  td b{font-weight:600}
+  .scroll{overflow-x:auto}
+  .pos{color:var(--green);font-weight:600} .neg{color:var(--red);font-weight:600}
+  .muted{color:var(--mut);font-size:12.5px}
+  .ev{font-family:"JetBrains Mono",ui-monospace,Consolas,monospace;font-size:11.5px;line-height:1.55;white-space:pre-wrap;word-break:break-word;color:var(--mut);max-height:320px;overflow:auto}
+  .bar{display:flex;align-items:flex-end;gap:4px;height:80px;margin:4px 0 8px;padding-bottom:2px;border-bottom:1px dashed var(--line)}
+  .bar div{flex:1;min-width:6px;border-radius:5px 5px 2px 2px;opacity:.9}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><div class="coin">Au</div><h1>XAUT <span>Options Bot</span></h1></div>
+    <span id="state" class="pill">loading…</span>
+  </header>
+  <div id="sub"></div>
+  <div class="grid">
+    <div class="card"><div class="lbl">Gold spot</div><div class="val" id="spot">–</div></div>
+    <div class="card"><div class="lbl">Aaj ka PnL</div><div class="val" id="today">–</div></div>
+    <div class="card"><div class="lbl">Entries aaj</div><div class="val" id="entries">–</div></div>
+    <div class="card"><div class="lbl">Kul PnL (30 din)</div><div class="val" id="total">–</div></div>
+  </div>
+
+  <div class="card"><h2>Khuli positions</h2><div class="scroll"><table id="pos"></table></div></div>
+  <div class="card"><h2>Aaj band hue trades</h2><div class="scroll"><table id="closed"></table></div></div>
+  <div class="card"><h2>Roz ka PnL</h2><div class="bar" id="bars"></div><div class="scroll"><table id="hist"></table></div></div>
+  <div class="card"><h2>Setting</h2><div id="settings" class="muted"></div></div>
+  <div class="card"><h2>Haal ki ghatnayein</h2><div class="ev" id="events"></div></div>
+  <div class="foot">Page har 60 second mein apne-aap refresh hota hai. Paper/demo mode mein PnL asli Delta bhav par hai, asli paisa nahi.</div>
+</div>
+<script>
+const owner = location.hostname.split('.')[0];
+const repo = location.pathname.split('/').filter(Boolean)[0] || '';
+const SRC = [
+  `https://raw.githubusercontent.com/${owner}/${repo}/main/docs/status.json`,
+  'status.json'
+];
+const $ = id => document.getElementById(id);
+const money = v => (v == null ? '–' : (v >= 0 ? '+' : '−') + '$' + Math.abs(v).toFixed(3));
+const cls = v => v > 0 ? 'pos' : (v < 0 ? 'neg' : '');
+const n = v => (v == null || v === 0 ? '–' : (+v).toFixed(3));
+
+async function load(){
+  let d = null;
+  for (const u of SRC){
+    try{ const r = await fetch(u + '?t=' + Date.now(), {cache:'no-store'}); if (r.ok){ d = await r.json(); break; } }catch(e){}
+  }
+  if (!d){ $('state').textContent = 'data nahi mila'; $('state').className = 'pill bad'; return; }
+  const age = Math.round((Date.now()/1000 - d.updated_ts)/60);
+  const st = $('state');
+  if (d.phase === 'done'){ st.textContent = 'Aaj ka kaam khatam'; st.className = 'pill wait'; }
+  else if (d.phase === 'no-expiry'){ st.textContent = 'Aaj expiry nahi'; st.className = 'pill wait'; }
+  else if (age > 10){ st.textContent = `⚠ ${age} min se update nahi`; st.className = 'pill bad'; }
+  else if (d.phase === 'waiting'){ st.textContent = `Window ${d.window} ka intezar`; st.className = 'pill wait'; }
+  else { st.textContent = 'Chal raha hai'; st.className = 'pill ok'; }
+  if (d.trade_ok === false){ st.textContent += ' | ❌ order account'; st.className = 'pill bad'; }
+
+  $('sub').textContent = `${d.mode} | expiry ${d.expiry} IST | update ${d.updated_ist} (${age} min pehle)`;
+  $('spot').textContent = d.spot ? (+d.spot).toFixed(2) : '–';
+  const today = (d.realized_today || 0) + (d.unreal_today || 0);
+  $('today').innerHTML = `<span class="${cls(today)}">${money(today)}</span>`;
+  $('entries').textContent = d.entries_today;
+  $('total').innerHTML = `<span class="${cls(d.total_pnl)}">${money(d.total_pnl)}</span>`;
+
+  const P = d.positions || [];
+  $('pos').innerHTML = P.length ? `<tr><th>Option</th><th>Bid</th><th>Mark</th><th>${d.settings.exit.startsWith('Trail') ? 'Peak' : 'Target'}</th><th>PnL</th></tr>` +
+    P.map(p => `<tr><td style="white-space:nowrap"><b>${p.type} ${Math.round(p.strike)}</b><div class="muted">@${p.entry} · ${(p.time||'').slice(0,5)}</div></td>
+      <td>${n(p.bid)}</td><td>${n(p.mark)}</td>
+      <td>${p.peak ? n(p.peak)+'<div class="muted">stop '+n(p.stop)+'</div>' : (p.trail_at ? '<span class="muted">@ '+n(p.trail_at)+'</span>' : n(p.target))}</td>
+      <td class="${cls(p.unreal)}">${money(p.unreal)}</td></tr>`).join('') : '<tr><td class="muted">Koi khuli position nahi</td></tr>';
+
+  const C = d.closed_today || [];
+  $('closed').innerHTML = C.length ? '<tr><th>Option</th><th>Entry</th><th>Exit</th><th>PnL</th></tr>' +
+    C.map(c => `<tr><td style="white-space:nowrap">${c.symbol.split('-')[0]}E ${c.symbol.split('-')[2]}</td><td>${c.entry}</td><td>${n(c.exit)}</td><td class="${cls(c.pnl)}">${money(c.pnl)}</td></tr>`).join('')
+    : '<tr><td class="muted">Abhi koi nahi</td></tr>';
+
+  const H = d.history || [];
+  const mx = Math.max(0.0001, ...H.map(h => Math.abs(h.pnl)));
+  $('bars').innerHTML = H.map(h => `<div title="${h.date}: ${money(h.pnl)}" style="height:${Math.max(3, Math.abs(h.pnl)/mx*70)}px;background:linear-gradient(180deg,var(${h.pnl>=0?'--green':'--red'}),transparent 160%)"></div>`).join('');
+  let cum = 0;
+  $('hist').innerHTML = H.length ? '<tr><th>Din</th><th>Trades</th><th>PnL</th><th>Kul</th></tr>' +
+    H.map(h => { cum += h.pnl; return `<tr><td>${h.date}</td><td>${h.exits}</td><td class="${cls(h.pnl)}">${money(h.pnl)}</td><td class="${cls(cum)}">${money(cum)}</td></tr>`; }).reverse().join('')
+    : '<tr><td class="muted">Abhi history nahi</td></tr>';
+
+  const s = d.settings;
+  $('settings').textContent = `Band ±${s.band} | Ask ${s.entry} | Qty ${s.qty} | ${s.exit} | ${s.one_each ? '1 CE + 1 PE (sabse sasta OTM)' : 'sab entries'} | Window ${d.window}`;
+  $('events').textContent = (d.events || []).join('\n') || '–';
+}
+load(); setInterval(load, 60000);
+</script>
+</body>
+</html>
