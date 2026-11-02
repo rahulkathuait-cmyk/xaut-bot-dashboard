@@ -1,7 +1,7 @@
 {
- "updated_ist": "02-Nov-2026 21:33:34",
- "updated_ts": 1793635414,
- "phase": "running",
+ "updated_ist": "02-Nov-2026 21:33:36",
+ "updated_ts": 1793635416,
+ "phase": "done",
  "mode": "PAPER + DEMO",
  "expiry": "02-Nov 21:30",
  "window": "12:30-21:30",
@@ -61,6 +61,7 @@
  ],
  "total_pnl": -1.7582,
  "events": [
+  "02-Nov 21:33:36 \ud83d\udcca Aaj: 2 trades | 0 jeete | kharcha $1.000000 | total PnL \u2248 $-1.603250",
   "02-Nov 21:33:34 EXPIRY P-XAUT-3830-021126 x10000 entry 0.1 -> payout 0.000 (OTM, last spot (approx)) | PnL \u2248 $-1.041300",
   "02-Nov 21:29:33 Dashboard update fail (GH_TOKEN/GH_REPO check karo): ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))",
   "02-Nov 20:19:09 Dashboard update fail (GH_TOKEN/GH_REPO check karo): HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/rahulkathuait-cmyk/xaut-bot-dashboard/contents/docs/status.json (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)\"))",
