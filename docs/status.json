@@ -1,6 +1,6 @@
 {
- "updated_ist": "02-Nov-2026 19:08:52",
- "updated_ts": 1793626732,
+ "updated_ist": "02-Nov-2026 19:11:56",
+ "updated_ts": 1793626916,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "02-Nov 21:30",
@@ -13,7 +13,7 @@
   "one_each": true
  },
  "trade_ok": true,
- "spot": 3921.158,
+ "spot": 3932.19,
  "entries_today": 2,
  "positions": [
   {
@@ -32,28 +32,18 @@
    "target": null,
    "unreal": -0.9,
    "demo": "P-XAUT-3840-021126"
-  },
-  {
-   "symbol": "C-XAUT-3960-021126",
-   "type": "CE",
-   "strike": 3960.0,
-   "entry": 0.1,
-   "qty": 9000,
-   "time": "18:02:01",
-   "bid": 0.05,
-   "ask": 0.3,
-   "mark": 0.119541,
-   "peak": 0.35584177,
-   "stop": 0.2491,
-   "trail_at": 0.3,
-   "target": null,
-   "unreal": -0.45,
-   "demo": "C-XAUT-3960-021126"
   }
  ],
- "closed_today": [],
- "realized_today": -0.0562,
- "unreal_today": -1.35,
+ "closed_today": [
+  {
+   "symbol": "C-XAUT-3960-021126",
+   "entry": 0.1,
+   "exit": 0.05,
+   "pnl": -0.562
+  }
+ ],
+ "realized_today": -0.562,
+ "unreal_today": -0.9,
  "history": [
   {
    "date": "2026-10-28",
@@ -77,12 +67,16 @@
   },
   {
    "date": "2026-11-02",
-   "pnl": -0.0562,
-   "exits": 1
+   "pnl": -0.562,
+   "exits": 3
   }
  ],
- "total_pnl": -0.2111,
+ "total_pnl": -0.7169,
  "events": [
+  "02-Nov 19:09:05 \ud83c\udfaf SELL C-XAUT-3960-021126 x8000 @ 0.05 (entry 0.1) | trail (peak 0.356, stop 0.249) | PnL \u2248 $-0.449560",
+  "02-Nov 19:09:00    \u21b3 DEMO SELL C-XAUT-3960-021126 x1 | fill price 0.1 | state closed",
+  "02-Nov 19:08:59 \ud83c\udfaf SELL C-XAUT-3960-021126 x1000 @ 0.05 (entry 0.1) | trail (peak 0.356, stop 0.249) | PnL \u2248 $-0.056195",
+  "02-Nov 19:08:54    \u21b3 DEMO BUY C-XAUT-3960-021126 x1 | fill price 4.3 | state closed",
   "02-Nov 19:08:52    \u21b3 DEMO SELL C-XAUT-3960-021126 x1 | fill price 0.1 | state closed",
   "02-Nov 19:08:52 \ud83c\udfaf SELL C-XAUT-3960-021126 x1000 @ 0.05 (entry 0.1) | trail (peak 0.356, stop 0.249) | PnL \u2248 $-0.056195",
   "02-Nov 19:08:26 \ud83d\ude80 TRAILING CHALU C-XAUT-3960-021126 | mark 0.351 (entry 0.1) | stop 0.246"
