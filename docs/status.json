@@ -1,0 +1,81 @@
+{
+ "updated_ist": "02-Nov-2026 18:46:04",
+ "updated_ts": 1793625364,
+ "phase": "running",
+ "mode": "PAPER + DEMO",
+ "expiry": "02-Nov 21:30",
+ "window": "12:30-21:30",
+ "settings": {
+  "band": 80.0,
+  "entry": "0.06-0.1",
+  "qty": 10000,
+  "exit": "Trailing 3x / 30%",
+  "one_each": true
+ },
+ "trade_ok": true,
+ "spot": 3894.96,
+ "entries_today": 2,
+ "positions": [
+  {
+   "symbol": "P-XAUT-3830-021126",
+   "type": "PE",
+   "strike": 3830.0,
+   "entry": 0.1,
+   "qty": 10000,
+   "time": "17:04:38",
+   "bid": 0.02,
+   "ask": 0.09,
+   "mark": 0.03688517,
+   "peak": null,
+   "stop": null,
+   "trail_at": 0.3,
+   "target": null,
+   "unreal": -0.8,
+   "demo": "P-XAUT-3840-021126"
+  },
+  {
+   "symbol": "C-XAUT-3960-021126",
+   "type": "CE",
+   "strike": 3960.0,
+   "entry": 0.1,
+   "qty": 10000,
+   "time": "18:02:01",
+   "bid": 0.04,
+   "ask": 0.08,
+   "mark": 0.042548,
+   "peak": null,
+   "stop": null,
+   "trail_at": 0.3,
+   "target": null,
+   "unreal": -0.6,
+   "demo": "C-XAUT-3960-021126"
+  }
+ ],
+ "closed_today": [],
+ "realized_today": 0,
+ "unreal_today": -1.4,
+ "history": [
+  {
+   "date": "2026-10-28",
+   "pnl": -0.0399,
+   "exits": 3
+  },
+  {
+   "date": "2026-10-29",
+   "pnl": -0.2624,
+   "exits": 2
+  },
+  {
+   "date": "2026-10-30",
+   "pnl": 0.3807,
+   "exits": 2
+  },
+  {
+   "date": "2026-10-31",
+   "pnl": -0.2333,
+   "exits": 2
+  }
+ ],
+ "total_pnl": -0.1549,
+ "events": []
+}
