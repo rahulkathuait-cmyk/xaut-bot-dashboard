@@ -1,6 +1,6 @@
 {
- "updated_ist": "02-Nov-2026 19:08:23",
- "updated_ts": 1793626703,
+ "updated_ist": "02-Nov-2026 19:08:52",
+ "updated_ts": 1793626732,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "02-Nov 21:30",
@@ -13,7 +13,7 @@
   "one_each": true
  },
  "trade_ok": true,
- "spot": 3925.003,
+ "spot": 3921.158,
  "entries_today": 2,
  "positions": [
   {
@@ -38,22 +38,22 @@
    "type": "CE",
    "strike": 3960.0,
    "entry": 0.1,
-   "qty": 10000,
+   "qty": 9000,
    "time": "18:02:01",
-   "bid": 0.08,
-   "ask": 0.28,
-   "mark": 0.35143494,
-   "peak": 0.35143494,
-   "stop": 0.246,
+   "bid": 0.05,
+   "ask": 0.3,
+   "mark": 0.119541,
+   "peak": 0.35584177,
+   "stop": 0.2491,
    "trail_at": 0.3,
    "target": null,
-   "unreal": -0.2,
+   "unreal": -0.45,
    "demo": "C-XAUT-3960-021126"
   }
  ],
  "closed_today": [],
- "realized_today": 0,
- "unreal_today": -1.1,
+ "realized_today": -0.0562,
+ "unreal_today": -1.35,
  "history": [
   {
    "date": "2026-10-28",
@@ -74,8 +74,17 @@
    "date": "2026-10-31",
    "pnl": -0.2333,
    "exits": 2
+  },
+  {
+   "date": "2026-11-02",
+   "pnl": -0.0562,
+   "exits": 1
   }
  ],
- "total_pnl": -0.1549,
- "events": []
+ "total_pnl": -0.2111,
+ "events": [
+  "02-Nov 19:08:52    \u21b3 DEMO SELL C-XAUT-3960-021126 x1 | fill price 0.1 | state closed",
+  "02-Nov 19:08:52 \ud83c\udfaf SELL C-XAUT-3960-021126 x1000 @ 0.05 (entry 0.1) | trail (peak 0.356, stop 0.249) | PnL \u2248 $-0.056195",
+  "02-Nov 19:08:26 \ud83d\ude80 TRAILING CHALU C-XAUT-3960-021126 | mark 0.351 (entry 0.1) | stop 0.246"
+ ]
 }
