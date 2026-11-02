@@ -1,6 +1,6 @@
 {
- "updated_ist": "02-Nov-2026 19:57:37",
- "updated_ts": 1793629657,
+ "updated_ist": "02-Nov-2026 20:03:42",
+ "updated_ts": 1793630022,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "02-Nov 21:30",
@@ -13,7 +13,7 @@
   "one_each": true
  },
  "trade_ok": true,
- "spot": 3937.09,
+ "spot": 3945.092,
  "entries_today": 2,
  "positions": [
   {
@@ -73,6 +73,7 @@
  ],
  "total_pnl": -0.7169,
  "events": [
+  "02-Nov 20:00:57 Dashboard update fail (GH_TOKEN/GH_REPO check karo): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
   "02-Nov 19:09:05 \ud83c\udfaf SELL C-XAUT-3960-021126 x8000 @ 0.05 (entry 0.1) | trail (peak 0.356, stop 0.249) | PnL \u2248 $-0.449560",
   "02-Nov 19:09:00    \u21b3 DEMO SELL C-XAUT-3960-021126 x1 | fill price 0.1 | state closed",
   "02-Nov 19:08:59 \ud83c\udfaf SELL C-XAUT-3960-021126 x1000 @ 0.05 (entry 0.1) | trail (peak 0.356, stop 0.249) | PnL \u2248 $-0.056195",
