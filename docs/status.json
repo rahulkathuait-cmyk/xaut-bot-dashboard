@@ -1,9 +1,9 @@
 {
- "updated_ist": "02-Nov-2026 21:33:36",
- "updated_ts": 1793635416,
- "phase": "done",
+ "updated_ist": "03-Nov-2026 18:11:51",
+ "updated_ts": 1793709711,
+ "phase": "running",
  "mode": "PAPER + DEMO",
- "expiry": "02-Nov 21:30",
+ "expiry": "03-Nov 21:30",
  "window": "12:30-21:30",
  "settings": {
   "band": 80.0,
@@ -12,26 +12,31 @@
   "exit": "Trailing 3x / 30%",
   "one_each": true
  },
- "trade_ok": true,
- "spot": 3949.068,
- "entries_today": 2,
- "positions": [],
- "closed_today": [
+ "trade_ok": false,
+ "spot": 3911.599,
+ "entries_today": 1,
+ "positions": [
   {
-   "symbol": "C-XAUT-3960-021126",
-   "entry": 0.1,
-   "exit": 0.05,
-   "pnl": -0.562
-  },
-  {
-   "symbol": "P-XAUT-3830-021126",
-   "entry": 0.1,
-   "exit": 0.0,
-   "pnl": -1.0413
+   "symbol": "P-XAUT-3850-031126",
+   "type": "PE",
+   "strike": 3850.0,
+   "entry": 0.06,
+   "qty": 10000,
+   "time": "18:11:51",
+   "bid": 0.04,
+   "ask": 0.06,
+   "mark": 0.15385689,
+   "peak": null,
+   "stop": null,
+   "trail_at": 0.18,
+   "target": null,
+   "unreal": -0.2,
+   "demo": null
   }
  ],
- "realized_today": -1.6033,
- "unreal_today": 0.0,
+ "closed_today": [],
+ "realized_today": 0,
+ "unreal_today": -0.2,
  "history": [
   {
    "date": "2026-10-28",
@@ -61,17 +66,7 @@
  ],
  "total_pnl": -1.7582,
  "events": [
-  "02-Nov 21:33:36 \ud83d\udcca Aaj: 2 trades | 0 jeete | kharcha $1.000000 | total PnL \u2248 $-1.603250",
-  "02-Nov 21:33:34 EXPIRY P-XAUT-3830-021126 x10000 entry 0.1 -> payout 0.000 (OTM, last spot (approx)) | PnL \u2248 $-1.041300",
-  "02-Nov 21:29:33 Dashboard update fail (GH_TOKEN/GH_REPO check karo): ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))",
-  "02-Nov 20:19:09 Dashboard update fail (GH_TOKEN/GH_REPO check karo): HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/rahulkathuait-cmyk/xaut-bot-dashboard/contents/docs/status.json (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)\"))",
-  "02-Nov 20:00:57 Dashboard update fail (GH_TOKEN/GH_REPO check karo): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-  "02-Nov 19:09:05 \ud83c\udfaf SELL C-XAUT-3960-021126 x8000 @ 0.05 (entry 0.1) | trail (peak 0.356, stop 0.249) | PnL \u2248 $-0.449560",
-  "02-Nov 19:09:00    \u21b3 DEMO SELL C-XAUT-3960-021126 x1 | fill price 0.1 | state closed",
-  "02-Nov 19:08:59 \ud83c\udfaf SELL C-XAUT-3960-021126 x1000 @ 0.05 (entry 0.1) | trail (peak 0.356, stop 0.249) | PnL \u2248 $-0.056195",
-  "02-Nov 19:08:54    \u21b3 DEMO BUY C-XAUT-3960-021126 x1 | fill price 4.3 | state closed",
-  "02-Nov 19:08:52    \u21b3 DEMO SELL C-XAUT-3960-021126 x1 | fill price 0.1 | state closed",
-  "02-Nov 19:08:52 \ud83c\udfaf SELL C-XAUT-3960-021126 x1000 @ 0.05 (entry 0.1) | trail (peak 0.356, stop 0.249) | PnL \u2248 $-0.056195",
-  "02-Nov 19:08:26 \ud83d\ude80 TRAILING CHALU C-XAUT-3960-021126 | mark 0.351 (entry 0.1) | stop 0.246"
+  "03-Nov 18:11:51    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "03-Nov 18:11:51 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.43.152.9'}}"
  ]
 }
