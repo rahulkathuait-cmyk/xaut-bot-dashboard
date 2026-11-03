@@ -1,6 +1,6 @@
 {
- "updated_ist": "03-Nov-2026 18:11:51",
- "updated_ts": 1793709711,
+ "updated_ist": "03-Nov-2026 18:13:27",
+ "updated_ts": 1793709807,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "03-Nov 21:30",
@@ -12,9 +12,9 @@
   "exit": "Trailing 3x / 30%",
   "one_each": true
  },
- "trade_ok": false,
- "spot": 3911.599,
- "entries_today": 1,
+ "trade_ok": true,
+ "spot": 3910.833,
+ "entries_today": 2,
  "positions": [
   {
    "symbol": "P-XAUT-3850-031126",
@@ -24,19 +24,36 @@
    "qty": 10000,
    "time": "18:11:51",
    "bid": 0.04,
-   "ask": 0.06,
-   "mark": 0.15385689,
+   "ask": 0.05,
+   "mark": 0.15534843,
    "peak": null,
    "stop": null,
    "trail_at": 0.18,
    "target": null,
    "unreal": -0.2,
-   "demo": null
+   "demo": "P-XAUT-3860-031126"
+  },
+  {
+   "symbol": "C-XAUT-3990-031126",
+   "type": "CE",
+   "strike": 3990.0,
+   "entry": 0.09,
+   "qty": 10000,
+   "time": "18:11:54",
+   "bid": 0.04,
+   "ask": 0.09,
+   "mark": 0.05436509,
+   "peak": null,
+   "stop": null,
+   "trail_at": 0.27,
+   "target": null,
+   "unreal": -0.5,
+   "demo": "C-XAUT-3990-031126"
   }
  ],
  "closed_today": [],
  "realized_today": 0,
- "unreal_today": -0.2,
+ "unreal_today": -0.7,
  "history": [
   {
    "date": "2026-10-28",
@@ -66,6 +83,18 @@
  ],
  "total_pnl": -1.7582,
  "events": [
+  "03-Nov 18:13:27    \u21b3 DEMO BUY C-XAUT-3990-031126 x1 | fill price 0.2 | state closed",
+  "03-Nov 18:13:27    \u21b3 DEMO BUY P-XAUT-3860-031126 x1 | fill price 3.4 | state closed",
+  "03-Nov 18:12:55    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "03-Nov 18:12:55 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.43.152.9'}}",
+  "03-Nov 18:12:25    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "03-Nov 18:12:25 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.43.152.9'}}",
+  "03-Nov 18:11:55    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "03-Nov 18:11:55 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.43.152.9'}}",
+  "03-Nov 18:11:54    \u21b3 DEMO BUY C-XAUT-3990-031126 fail: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.43.152.9'}}",
+  "03-Nov 18:11:54 \ud83d\udfe2 BUY C-XAUT-3990-031126 x10000 @ 0.09 | spot 3911.60 | trailing chalu hogi mark 0.270 | bid 0.05 x19999 | ask 0.09 x20248 | spread 0.040",
+  "03-Nov 18:11:54    \u21b3 DEMO BUY P-XAUT-3850-031126 fail: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.43.152.9'}}",
+  "03-Nov 18:11:53 \ud83d\udfe2 BUY P-XAUT-3850-031126 x10000 @ 0.06 | spot 3911.60 | trailing chalu hogi mark 0.180 | bid 0.04 x25500 | ask 0.06 x130987 | spread 0.020",
   "03-Nov 18:11:51    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
   "03-Nov 18:11:51 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.43.152.9'}}"
  ]
