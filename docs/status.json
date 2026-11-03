@@ -1,6 +1,6 @@
 {
- "updated_ist": "03-Nov-2026 18:53:10",
- "updated_ts": 1793712190,
+ "updated_ist": "03-Nov-2026 18:56:14",
+ "updated_ts": 1793712374,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "03-Nov 21:30",
@@ -13,7 +13,7 @@
   "one_each": true
  },
  "trade_ok": true,
- "spot": 3926.721,
+ "spot": 3928.611,
  "entries_today": 2,
  "positions": [
   {
@@ -25,7 +25,7 @@
    "time": "18:11:51",
    "bid": 0.02,
    "ask": 0.06,
-   "mark": 0.03961218,
+   "mark": 0.02880428,
    "peak": null,
    "stop": null,
    "trail_at": 0.18,
@@ -41,8 +41,8 @@
    "qty": 10000,
    "time": "18:11:54",
    "bid": 0.1,
-   "ask": 0.2,
-   "mark": 0.10326048,
+   "ask": 0.18,
+   "mark": 0.10642919,
    "peak": null,
    "stop": null,
    "trail_at": 0.27,
