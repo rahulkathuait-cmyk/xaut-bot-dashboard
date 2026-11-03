@@ -1,6 +1,6 @@
 {
- "updated_ist": "03-Nov-2026 18:22:36",
- "updated_ts": 1793710356,
+ "updated_ist": "03-Nov-2026 18:25:40",
+ "updated_ts": 1793710540,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "03-Nov 21:30",
@@ -13,7 +13,7 @@
   "one_each": true
  },
  "trade_ok": true,
- "spot": 3921.125,
+ "spot": 3921.906,
  "entries_today": 2,
  "positions": [
   {
@@ -23,14 +23,14 @@
    "entry": 0.06,
    "qty": 10000,
    "time": "18:11:51",
-   "bid": 0.04,
-   "ask": 0.08,
-   "mark": 0.10158385,
+   "bid": 0.03,
+   "ask": 0.05,
+   "mark": 0.07568926,
    "peak": null,
    "stop": null,
    "trail_at": 0.18,
    "target": null,
-   "unreal": -0.2,
+   "unreal": -0.3,
    "demo": "P-XAUT-3860-031126"
   },
   {
@@ -40,20 +40,20 @@
    "entry": 0.09,
    "qty": 10000,
    "time": "18:11:54",
-   "bid": 0.06,
-   "ask": 0.09,
-   "mark": 0.10757355,
+   "bid": 0.1,
+   "ask": 0.19,
+   "mark": 0.10600096,
    "peak": null,
    "stop": null,
    "trail_at": 0.27,
    "target": null,
-   "unreal": -0.3,
+   "unreal": 0.1,
    "demo": "C-XAUT-3990-031126"
   }
  ],
  "closed_today": [],
  "realized_today": 0,
- "unreal_today": -0.5,
+ "unreal_today": -0.2,
  "history": [
   {
    "date": "2026-10-28",
