@@ -1,6 +1,6 @@
 {
- "updated_ist": "03-Nov-2026 20:41:03",
- "updated_ts": 1793718663,
+ "updated_ist": "03-Nov-2026 20:44:05",
+ "updated_ts": 1793718845,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "03-Nov 21:30",
@@ -13,7 +13,7 @@
   "one_each": true
  },
  "trade_ok": true,
- "spot": 3931.238,
+ "spot": 3933.38,
  "entries_today": 2,
  "positions": [
   {
