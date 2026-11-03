@@ -1,6 +1,6 @@
 {
- "updated_ist": "03-Nov-2026 18:59:53",
- "updated_ts": 1793712593,
+ "updated_ist": "03-Nov-2026 19:00:15",
+ "updated_ts": 1793712615,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "03-Nov 21:30",
@@ -13,7 +13,7 @@
   "one_each": true
  },
  "trade_ok": true,
- "spot": 3949.356,
+ "spot": 3947.189,
  "entries_today": 2,
  "positions": [
   {
@@ -32,28 +32,18 @@
    "target": null,
    "unreal": -0.4,
    "demo": "P-XAUT-3860-031126"
-  },
-  {
-   "symbol": "C-XAUT-3990-031126",
-   "type": "CE",
-   "strike": 3990.0,
-   "entry": 0.09,
-   "qty": 10000,
-   "time": "18:11:54",
-   "bid": 0.1,
-   "ask": 0.25,
-   "mark": 0.3243601,
-   "peak": 0.3243601,
-   "stop": 0.2271,
-   "trail_at": 0.27,
-   "target": null,
-   "unreal": 0.1,
-   "demo": "C-XAUT-3990-031126"
   }
  ],
- "closed_today": [],
- "realized_today": 0,
- "unreal_today": -0.3,
+ "closed_today": [
+  {
+   "symbol": "C-XAUT-3990-031126",
+   "entry": 0.09,
+   "exit": 0.11,
+   "pnl": 0.1174
+  }
+ ],
+ "realized_today": 0.1174,
+ "unreal_today": -0.4,
  "history": [
   {
    "date": "2026-10-28",
@@ -79,10 +69,18 @@
    "date": "2026-11-02",
    "pnl": -1.6033,
    "exits": 4
+  },
+  {
+   "date": "2026-11-03",
+   "pnl": 0.1174,
+   "exits": 1
   }
  ],
- "total_pnl": -1.7582,
+ "total_pnl": -1.6408,
  "events": [
+  "03-Nov 19:00:15    \u21b3 DEMO SELL C-XAUT-3990-031126 x1 | fill price 0.1 | state closed",
+  "03-Nov 19:00:15 \ud83c\udfaf SELL C-XAUT-3990-031126 x10000 @ 0.11 (entry 0.09) | trail (peak 0.324, stop 0.227) | PnL \u2248 $0.117400",
+  "03-Nov 18:59:55 \ud83d\ude80 TRAILING CHALU C-XAUT-3990-031126 | mark 0.324 (entry 0.09) | stop 0.227",
   "03-Nov 18:13:27    \u21b3 DEMO BUY C-XAUT-3990-031126 x1 | fill price 0.2 | state closed",
   "03-Nov 18:13:27    \u21b3 DEMO BUY P-XAUT-3860-031126 x1 | fill price 3.4 | state closed",
   "03-Nov 18:12:55    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
