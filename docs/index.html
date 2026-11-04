@@ -105,6 +105,7 @@ async function load(){
   if (dataDay !== todayIST && nowH >= 13){ st.textContent = '⚠ Aaj bot nahi chala'; st.className = 'pill bad'; }
   else if (d.phase === 'done'){ st.textContent = 'Aaj ka kaam khatam'; st.className = 'pill wait'; }
   else if (d.phase === 'no-expiry'){ st.textContent = 'Aaj expiry nahi'; st.className = 'pill wait'; }
+  else if (d.phase === 'skip'){ st.textContent = 'Aaj skip day (Shanivar) - trade nahi'; st.className = 'pill wait'; }
   else if (age > 10){ st.textContent = `⚠ ${age} min se update nahi`; st.className = 'pill bad'; }
   else if (d.phase === 'waiting'){ st.textContent = `Window ${d.window} ka intezar`; st.className = 'pill wait'; }
   else { st.textContent = 'Chal raha hai'; st.className = 'pill ok'; }
@@ -118,8 +119,8 @@ async function load(){
   $('total').innerHTML = `<span class="${cls(d.total_pnl)}">${money(d.total_pnl)}</span>`;
 
   const P = d.positions || [];
-  $('pos').innerHTML = P.length ? `<tr><th>Option</th><th>Bid</th><th>Mark</th><th>${d.settings.exit.startsWith('Trail') ? 'Peak' : 'Target'}</th><th>PnL</th></tr>` +
-    P.map(p => `<tr><td style="white-space:nowrap"><b>${p.type} ${Math.round(p.strike)}</b><div class="muted">@${p.entry} · ${(p.time||'').slice(0,5)}</div></td>
+  $('pos').innerHTML = P.length ? `<tr><th>Option</th><th>Bid</th><th>Mark</th><th>${/trail/i.test(d.settings.exit) ? 'Peak' : 'Target'}</th><th>PnL</th></tr>` +
+    P.map(p => `<tr><td style="min-width:0"><b style="white-space:nowrap">${p.type} ${Math.round(p.strike)}</b><div class="muted">@${p.entry} · ${(p.time||'').slice(0,5)}${p.slot ? ' · '+p.slot : ''}</div><div class="muted">qty ${p.qty}${p.target_qty && p.qty + (p.half_sold||0) < p.target_qty ? ' / '+p.target_qty+' (adhura)' : ''}${p.half_sold ? ' · '+p.half_sold+' bike (adha)' : ''}</div></td>
       <td>${n(p.bid)}</td><td>${n(p.mark)}</td>
       <td>${p.peak ? n(p.peak)+'<div class="muted">stop '+n(p.stop)+'</div>' : (p.trail_at ? '<span class="muted">@ '+n(p.trail_at)+'</span>' : n(p.target))}</td>
       <td class="${cls(p.unreal)}">${money(p.unreal)}</td></tr>`).join('') : '<tr><td class="muted">Koi khuli position nahi</td></tr>';
@@ -138,7 +139,7 @@ async function load(){
     : '<tr><td class="muted">Abhi history nahi</td></tr>';
 
   const s = d.settings;
-  $('settings').textContent = `Band ±${s.band} | Ask ${s.entry} | Qty ${s.qty} | ${s.exit} | ${s.one_each ? '1 CE + 1 PE (sabse sasta OTM)' : 'sab entries'} | Window ${d.window}`;
+  $('settings').textContent = `Band ±${s.band} | Ask ${s.entry} | Qty ${s.qty} | ${s.exit} | ${s.one_each ? '1 CE + 1 PE (sabse sasta OTM)' : 'sab entries'}${s.shaam_slot ? ' | Shaam slot '+s.shaam_slot : ''} | Window ${d.window}`;
   $('events').textContent = (d.events || []).join('\n') || '–';
 }
 load(); setInterval(load, 60000);
