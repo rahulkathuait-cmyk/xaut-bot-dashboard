@@ -1,0 +1,57 @@
+{
+ "updated_ist": "04-Nov-2026 18:12:14",
+ "updated_ts": 1793796134,
+ "phase": "running",
+ "mode": "PAPER + DEMO",
+ "expiry": "04-Nov 21:30",
+ "window": "13:00-19:00",
+ "settings": {
+  "band": 80.0,
+  "entry": "0.06-0.1",
+  "qty": 10000,
+  "exit": "2x par adha becho + baaki trailing 50%",
+  "one_each": true,
+  "shaam_slot": "17:00 se, band \u00b160"
+ },
+ "trade_ok": true,
+ "spot": 4026.442,
+ "entries_today": 0,
+ "positions": [],
+ "closed_today": [],
+ "realized_today": 0,
+ "unreal_today": 0.0,
+ "history": [
+  {
+   "date": "2026-10-28",
+   "pnl": -0.0399,
+   "exits": 3
+  },
+  {
+   "date": "2026-10-29",
+   "pnl": -0.2624,
+   "exits": 2
+  },
+  {
+   "date": "2026-10-30",
+   "pnl": 0.3807,
+   "exits": 2
+  },
+  {
+   "date": "2026-10-31",
+   "pnl": -0.2333,
+   "exits": 2
+  },
+  {
+   "date": "2026-11-02",
+   "pnl": -1.6033,
+   "exits": 4
+  },
+  {
+   "date": "2026-11-03",
+   "pnl": -0.5074,
+   "exits": 2
+  }
+ ],
+ "total_pnl": -2.2656,
+ "events": []
+}
