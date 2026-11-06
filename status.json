@@ -1,9 +1,9 @@
 {
- "updated_ist": "04-Nov-2026 21:30:02",
- "updated_ts": 1793808002,
- "phase": "done",
+ "updated_ist": "06-Nov-2026 08:53:27",
+ "updated_ts": 1793935407,
+ "phase": "waiting",
  "mode": "PAPER + DEMO",
- "expiry": "04-Nov 21:30",
+ "expiry": "06-Nov 21:30",
  "window": "13:00-19:00",
  "settings": {
   "band": 80.0,
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": true,
- "spot": 4036.083,
+ "spot": null,
  "entries_today": 0,
  "positions": [],
  "closed_today": [],
@@ -53,7 +53,5 @@
   }
  ],
  "total_pnl": -2.2656,
- "events": [
-  "04-Nov 19:07:31 Dashboard update fail (GH_TOKEN/GH_REPO check karo): HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/rahulkathuait-cmyk/xaut-bot-dashboard/contents/status.json (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)\"))"
- ]
+ "events": []
 }
