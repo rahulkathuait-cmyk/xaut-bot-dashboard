@@ -1,9 +1,9 @@
 {
- "updated_ist": "06-Nov-2026 20:54:26",
- "updated_ts": 1793978666,
- "phase": "running",
+ "updated_ist": "07-Nov-2026 08:37:36",
+ "updated_ts": 1794020856,
+ "phase": "skip",
  "mode": "PAPER + DEMO",
- "expiry": "06-Nov 21:30",
+ "expiry": "07-Nov 21:30",
  "window": "13:00-19:00",
  "settings": {
   "band": 80.0,
@@ -13,8 +13,8 @@
   "one_each": true,
   "shaam_slot": "17:00 se, band \u00b160"
  },
- "trade_ok": true,
- "spot": 4040.09,
+ "trade_ok": false,
+ "spot": null,
  "entries_today": 0,
  "positions": [],
  "closed_today": [],
@@ -53,5 +53,8 @@
   }
  ],
  "total_pnl": -2.2656,
- "events": []
+ "events": [
+  "07-Nov 08:37:36    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "07-Nov 08:37:36 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.43.152.154'}}"
+ ]
 }
