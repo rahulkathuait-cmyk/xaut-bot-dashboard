@@ -1,6 +1,6 @@
 {
- "updated_ist": "12-Nov-2026 19:38:44",
- "updated_ts": 1794492524,
+ "updated_ist": "12-Nov-2026 19:41:53",
+ "updated_ts": 1794492713,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "12-Nov 21:30",
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": false,
- "spot": 3890.093,
+ "spot": 3884.77,
  "entries_today": 0,
  "positions": [],
  "closed_today": [],
@@ -54,6 +54,9 @@
  ],
  "total_pnl": -2.2656,
  "events": [
+  "12-Nov 19:40:29 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:40:12 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:39:55 API error: GET /v2/tickers 3 baar fail hua",
   "12-Nov 19:37:01 API error: GET /v2/tickers 3 baar fail hua",
   "12-Nov 19:34:34 API error: GET /v2/tickers 3 baar fail hua",
   "12-Nov 19:32:35    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
