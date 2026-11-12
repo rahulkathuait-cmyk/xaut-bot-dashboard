@@ -1,6 +1,6 @@
 {
- "updated_ist": "12-Nov-2026 19:41:53",
- "updated_ts": 1794492713,
+ "updated_ist": "12-Nov-2026 19:47:02",
+ "updated_ts": 1794493022,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "12-Nov 21:30",
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": false,
- "spot": 3884.77,
+ "spot": 3900.788,
  "entries_today": 0,
  "positions": [],
  "closed_today": [],
@@ -54,6 +54,15 @@
  ],
  "total_pnl": -2.2656,
  "events": [
+  "12-Nov 19:46:56 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:46:28 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:46:11 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:45:42 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:45:07 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:44:39 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:44:11 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:43:42 API error: GET /v2/tickers 3 baar fail hua",
+  "12-Nov 19:43:04 API error: GET /v2/tickers 3 baar fail hua",
   "12-Nov 19:40:29 API error: GET /v2/tickers 3 baar fail hua",
   "12-Nov 19:40:12 API error: GET /v2/tickers 3 baar fail hua",
   "12-Nov 19:39:55 API error: GET /v2/tickers 3 baar fail hua",
