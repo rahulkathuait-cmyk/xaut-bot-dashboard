@@ -1,6 +1,6 @@
 {
- "updated_ist": "12-Nov-2026 19:32:36",
- "updated_ts": 1794492156,
+ "updated_ist": "12-Nov-2026 19:35:36",
+ "updated_ts": 1794492336,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "12-Nov 21:30",
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": false,
- "spot": 3886.834,
+ "spot": 3893.268,
  "entries_today": 0,
  "positions": [],
  "closed_today": [],
@@ -54,6 +54,7 @@
  ],
  "total_pnl": -2.2656,
  "events": [
+  "12-Nov 19:34:34 API error: GET /v2/tickers 3 baar fail hua",
   "12-Nov 19:32:35    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
   "12-Nov 19:32:35 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.216.222'}}"
  ]
