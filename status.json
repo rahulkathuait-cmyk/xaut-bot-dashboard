@@ -1,6 +1,6 @@
 {
- "updated_ist": "12-Nov-2026 18:16:33",
- "updated_ts": 1794487593,
+ "updated_ist": "12-Nov-2026 19:32:36",
+ "updated_ts": 1794492156,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "12-Nov 21:30",
@@ -13,8 +13,8 @@
   "one_each": true,
   "shaam_slot": "17:00 se, band \u00b160"
  },
- "trade_ok": true,
- "spot": 3931.611,
+ "trade_ok": false,
+ "spot": 3886.834,
  "entries_today": 0,
  "positions": [],
  "closed_today": [],
@@ -54,30 +54,7 @@
  ],
  "total_pnl": -2.2656,
  "events": [
-  "12-Nov 15:05:04 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:04:47 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:04:30 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:02:58 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:02:27 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:02:10 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:01:53 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:01:36 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:01:18 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:01:01 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:00:44 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:00:27 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 15:00:10 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:59:53 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:59:36 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:59:19 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:59:02 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:58:45 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:58:28 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:58:11 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:57:54 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:57:37 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:57:20 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:57:03 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 14:56:46 API error: GET /v2/tickers 3 baar fail hua"
+  "12-Nov 19:32:35    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "12-Nov 19:32:35 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.216.222'}}"
  ]
 }
