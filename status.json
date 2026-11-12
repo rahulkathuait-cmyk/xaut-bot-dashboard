@@ -1,9 +1,9 @@
 {
- "updated_ist": "07-Nov-2026 08:37:36",
- "updated_ts": 1794020856,
- "phase": "skip",
+ "updated_ist": "12-Nov-2026 06:20:11",
+ "updated_ts": 1794444611,
+ "phase": "waiting",
  "mode": "PAPER + DEMO",
- "expiry": "07-Nov 21:30",
+ "expiry": "12-Nov 21:30",
  "window": "13:00-19:00",
  "settings": {
   "band": 80.0,
@@ -54,7 +54,9 @@
  ],
  "total_pnl": -2.2656,
  "events": [
-  "07-Nov 08:37:36    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
-  "07-Nov 08:37:36 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.43.152.154'}}"
+  "12-Nov 06:20:10    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "12-Nov 06:20:10 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.217.63'}}",
+  "12-Nov 06:19:55    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "12-Nov 06:19:54 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: GET /v2/wallet/balances 3 baar fail hua"
  ]
 }
