@@ -1,9 +1,9 @@
 {
- "updated_ist": "12-Nov-2026 21:27:32",
- "updated_ts": 1794499052,
- "phase": "running",
+ "updated_ist": "13-Nov-2026 08:12:55",
+ "updated_ts": 1794537775,
+ "phase": "waiting",
  "mode": "PAPER + DEMO",
- "expiry": "12-Nov 21:30",
+ "expiry": "13-Nov 21:30",
  "window": "13:00-19:00",
  "settings": {
   "band": 80.0,
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": false,
- "spot": 3865.846,
+ "spot": null,
  "entries_today": 0,
  "positions": [],
  "closed_today": [],
@@ -54,23 +54,9 @@
  ],
  "total_pnl": -2.2656,
  "events": [
-  "12-Nov 20:51:12 Dashboard update fail (GH_TOKEN/GH_REPO check karo): HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/rahulkathuait-cmyk/xaut-bot-dashboard/contents/status.json (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)\"))",
-  "12-Nov 20:05:23 Dashboard update fail (GH_TOKEN/GH_REPO check karo): HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/rahulkathuait-cmyk/xaut-bot-dashboard/contents/status.json (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)\"))",
-  "12-Nov 19:46:56 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:46:28 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:46:11 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:45:42 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:45:07 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:44:39 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:44:11 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:43:42 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:43:04 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:40:29 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:40:12 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:39:55 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:37:01 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:34:34 API error: GET /v2/tickers 3 baar fail hua",
-  "12-Nov 19:32:35    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
-  "12-Nov 19:32:35 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.216.222'}}"
+  "13-Nov 08:12:54    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "13-Nov 08:12:54 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.219.58'}}",
+  "13-Nov 08:12:54    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "13-Nov 08:12:54 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.219.58'}}"
  ]
 }
