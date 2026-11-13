@@ -1,6 +1,6 @@
 {
- "updated_ist": "13-Nov-2026 10:54:12",
- "updated_ts": 1794547452,
+ "updated_ist": "13-Nov-2026 11:04:14",
+ "updated_ts": 1794548054,
  "phase": "waiting",
  "mode": "PAPER + DEMO",
  "expiry": "13-Nov 21:30",
@@ -54,6 +54,8 @@
  ],
  "total_pnl": -2.2656,
  "events": [
+  "13-Nov 11:04:14    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "13-Nov 11:04:14 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.217.221'}}",
   "13-Nov 10:54:12    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
   "13-Nov 10:54:12 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.216.68'}}",
   "13-Nov 10:44:10    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
@@ -76,8 +78,6 @@
   "13-Nov 09:23:55 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.219.58'}}",
   "13-Nov 09:13:52    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
   "13-Nov 09:13:52 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.219.58'}}",
-  "13-Nov 09:03:50    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
-  "13-Nov 09:03:50 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.219.58'}}",
-  "13-Nov 08:53:48    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo."
+  "13-Nov 09:03:50    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo."
  ]
 }
