@@ -1,6 +1,6 @@
 {
- "updated_ist": "13-Nov-2026 10:04:03",
- "updated_ts": 1794544443,
+ "updated_ist": "13-Nov-2026 10:14:05",
+ "updated_ts": 1794545045,
  "phase": "waiting",
  "mode": "PAPER + DEMO",
  "expiry": "13-Nov 21:30",
@@ -54,6 +54,8 @@
  ],
  "total_pnl": -2.2656,
  "events": [
+  "13-Nov 10:14:05    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
+  "13-Nov 10:14:05 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.217.165'}}",
   "13-Nov 10:04:03    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
   "13-Nov 10:04:03 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.217.165'}}",
   "13-Nov 09:54:01    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
@@ -76,8 +78,6 @@
   "13-Nov 08:33:45 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.219.58'}}",
   "13-Nov 08:23:44 Dashboard update fail (GH_TOKEN/GH_REPO check karo): HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/rahulkathuait-cmyk/xaut-bot-dashboard/contents/status.json (Caused by NameResolutionError(\"HTTPSConnection(host='api.github.com', port=443): Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)\"))",
   "13-Nov 08:23:33    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
-  "13-Nov 08:23:33 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: GET /v2/wallet/balances 3 baar fail hua",
-  "13-Nov 08:12:54    \ud83d\udc49 IP whitelist check karo. Error mein jo client_ip hai use API key mein jodo.",
-  "13-Nov 08:12:54 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: HTTP 401: {'code': 'ip_not_whitelisted_for_api_key', 'context': {'client_ip': '49.36.219.58'}}"
+  "13-Nov 08:23:33 \u274c\u274c ORDER ACCOUNT CONNECTION FAIL: GET /v2/wallet/balances 3 baar fail hua"
  ]
 }
