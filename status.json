@@ -1,9 +1,9 @@
 {
- "updated_ist": "14-Nov-2026 12:15:02",
- "updated_ts": 1794638702,
- "phase": "skip",
+ "updated_ist": "15-Nov-2026 12:15:01",
+ "updated_ts": 1794725101,
+ "phase": "waiting",
  "mode": "PAPER + DEMO",
- "expiry": "14-Nov 21:30",
+ "expiry": "15-Nov 21:30",
  "window": "13:00-19:00",
  "settings": {
   "band": 80.0,
