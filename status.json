@@ -1,6 +1,6 @@
 {
- "updated_ist": "16-Nov-2026 18:51:12",
- "updated_ts": 1794835272,
+ "updated_ist": "16-Nov-2026 18:53:47",
+ "updated_ts": 1794835427,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "16-Nov 21:30",
@@ -14,12 +14,33 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": true,
- "spot": 3853.79,
- "entries_today": 0,
- "positions": [],
+ "spot": 3849.74,
+ "entries_today": 1,
+ "positions": [
+  {
+   "symbol": "P-XAUT-3790-161126",
+   "type": "PE",
+   "strike": 3790.0,
+   "entry": 0.1,
+   "qty": 10000,
+   "time": "18:53:47",
+   "bid": 0.05,
+   "ask": 0.1,
+   "mark": 0.16269162,
+   "peak": null,
+   "stop": null,
+   "trail_at": 0.2,
+   "target": null,
+   "unreal": -0.5,
+   "demo": null,
+   "slot": "shaam",
+   "target_qty": 10000,
+   "half_sold": 0
+  }
+ ],
  "closed_today": [],
  "realized_today": 0,
- "unreal_today": 0.0,
+ "unreal_today": -0.5,
  "history": [
   {
    "date": "2026-10-28",
