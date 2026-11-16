@@ -1,7 +1,7 @@
 {
- "updated_ist": "16-Nov-2026 21:33:35",
- "updated_ts": 1794845015,
- "phase": "running",
+ "updated_ist": "16-Nov-2026 21:33:37",
+ "updated_ts": 1794845017,
+ "phase": "done",
  "mode": "PAPER + DEMO",
  "expiry": "16-Nov 21:30",
  "window": "13:00-19:00",
@@ -66,6 +66,7 @@
  ],
  "total_pnl": -3.3069,
  "events": [
+  "16-Nov 21:33:37 \ud83d\udcca Aaj: 1 trades | 0 jeete | kharcha $1.000000 | total PnL \u2248 $-1.041300",
   "16-Nov 21:33:35 EXPIRY P-XAUT-3790-161126 x10000 entry 0.1 -> payout 0.000 (OTM, last spot (approx)) | PnL \u2248 $-1.041300",
   "16-Nov 20:14:15 Dashboard update fail (GH_TOKEN/GH_REPO check karo): 403 Client Error: Forbidden for url: https://api.github.com/repos/rahulkathuait-cmyk/xaut-bot-dashboard/contents/status.json",
   "16-Nov 18:53:49    \u21b3 DEMO BUY P-XAUT-3790-161126 x0 (limit 0.1) | fill price None | state cancelled",
