@@ -1,6 +1,6 @@
 {
- "updated_ist": "16-Nov-2026 18:53:47",
- "updated_ts": 1794835427,
+ "updated_ist": "16-Nov-2026 18:54:21",
+ "updated_ts": 1794835461,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "16-Nov 21:30",
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": true,
- "spot": 3849.74,
+ "spot": 3851.06,
  "entries_today": 1,
  "positions": [
   {
@@ -24,15 +24,15 @@
    "entry": 0.1,
    "qty": 10000,
    "time": "18:53:47",
-   "bid": 0.05,
-   "ask": 0.1,
-   "mark": 0.16269162,
+   "bid": 0.04,
+   "ask": 0.05,
+   "mark": 0.14405068,
    "peak": null,
    "stop": null,
    "trail_at": 0.2,
    "target": null,
-   "unreal": -0.5,
-   "demo": null,
+   "unreal": -0.6,
+   "demo": "P-XAUT-3790-161126",
    "slot": "shaam",
    "target_qty": 10000,
    "half_sold": 0
@@ -40,7 +40,7 @@
  ],
  "closed_today": [],
  "realized_today": 0,
- "unreal_today": -0.5,
+ "unreal_today": -0.6,
  "history": [
   {
    "date": "2026-10-28",
@@ -74,5 +74,8 @@
   }
  ],
  "total_pnl": -2.2656,
- "events": []
+ "events": [
+  "16-Nov 18:53:49    \u21b3 DEMO BUY P-XAUT-3790-161126 x0 (limit 0.1) | fill price None | state cancelled",
+  "16-Nov 18:53:48 \ud83d\udfe2 BUY P-XAUT-3790-161126 x10000 @ 0.1 | shaam slot (band \u00b160) | spot 3849.74 | trailing chalu hogi bid 0.200 | bid 0.05 x5134 | ask 0.1 x54225 | spread 0.050"
+ ]
 }
