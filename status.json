@@ -1,6 +1,6 @@
 {
- "updated_ist": "17-Nov-2026 19:32:05",
- "updated_ts": 1794924125,
+ "updated_ist": "17-Nov-2026 19:35:10",
+ "updated_ts": 1794924310,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "17-Nov 21:30",
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": true,
- "spot": 3841.963,
+ "spot": 3848.989,
  "entries_today": 0,
  "positions": [],
  "closed_today": [],
