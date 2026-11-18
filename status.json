@@ -1,7 +1,7 @@
 {
- "updated_ist": "18-Nov-2026 21:29:08",
- "updated_ts": 1795017548,
- "phase": "running",
+ "updated_ist": "18-Nov-2026 21:30:01",
+ "updated_ts": 1795017601,
+ "phase": "done",
  "mode": "PAPER + DEMO",
  "expiry": "18-Nov 21:30",
  "window": "13:00-19:00",
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": true,
- "spot": 3749.995,
+ "spot": 3749.658,
  "entries_today": 2,
  "positions": [],
  "closed_today": [
@@ -77,6 +77,7 @@
  ],
  "total_pnl": -2.5867,
  "events": [
+  "18-Nov 21:30:01 \ud83d\udcca Aaj: 2 trades | 2 jeete | kharcha $0.000000 | total PnL \u2248 $0.720246",
   "18-Nov 18:49:05 \ud83c\udfaf SELL C-XAUT-3820-181126 x5000 @ 0.05 (entry 0.08) | trail bid (peak 0.200, stop 0.100) | PnL \u2248 $-0.176845",
   "18-Nov 18:45:10 \ud83d\ude80 TRAILING CHALU C-XAUT-3820-181126 | bid 0.200 (entry 0.08) | stop 0.100",
   "18-Nov 18:45:05 \ud83d\udcb0 SELL C-XAUT-3820-181126 x5000 @ 0.2 (entry 0.08) | adha becho 2x | PnL \u2248 $0.542180 | baaki 5000 par trailing",
