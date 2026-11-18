@@ -1,6 +1,6 @@
 {
- "updated_ist": "18-Nov-2026 14:52:13",
- "updated_ts": 1794993733,
+ "updated_ist": "18-Nov-2026 14:52:46",
+ "updated_ts": 1794993766,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "18-Nov 21:30",
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": true,
- "spot": 3762.459,
+ "spot": 3762.281,
  "entries_today": 1,
  "positions": [
   {
@@ -26,7 +26,7 @@
    "time": "14:45:07",
    "bid": 0.06,
    "ask": 0.29,
-   "mark": 0.15526747,
+   "mark": 0.15326468,
    "peak": null,
    "stop": null,
    "trail_at": 0.16,
