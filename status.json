@@ -1,6 +1,6 @@
 {
- "updated_ist": "18-Nov-2026 18:41:37",
- "updated_ts": 1795007497,
+ "updated_ist": "18-Nov-2026 18:42:11",
+ "updated_ts": 1795007531,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "18-Nov 21:30",
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": true,
- "spot": 3760.355,
+ "spot": 3763.37,
  "entries_today": 2,
  "positions": [
   {
@@ -24,15 +24,15 @@
    "entry": 0.08,
    "qty": 10000,
    "time": "18:41:37",
-   "bid": 0.03,
-   "ask": 0.08,
-   "mark": 0.159706,
+   "bid": 0.04,
+   "ask": 0.1,
+   "mark": 0.18242207,
    "peak": null,
    "stop": null,
    "trail_at": 0.16,
    "target": null,
-   "unreal": -0.5,
-   "demo": null,
+   "unreal": -0.4,
+   "demo": "C-XAUT-3820-181126",
    "slot": "shaam",
    "target_qty": 10000,
    "half_sold": 0
@@ -47,7 +47,7 @@
   }
  ],
  "realized_today": 0.3549,
- "unreal_today": -0.5,
+ "unreal_today": -0.4,
  "history": [
   {
    "date": "2026-10-28",
@@ -92,6 +92,8 @@
  ],
  "total_pnl": -2.952,
  "events": [
+  "18-Nov 18:41:39    \u21b3 DEMO BUY C-XAUT-3820-181126 x0 (limit 0.08) | fill price None | state cancelled",
+  "18-Nov 18:41:39 \ud83d\udfe2 BUY C-XAUT-3820-181126 x10000 @ 0.08 | shaam slot (band \u00b160) | spot 3760.36 | trailing chalu hogi bid 0.160 | bid 0.03 x364658 | ask 0.08 x73145 | spread 0.050",
   "18-Nov 15:02:26 \ud83c\udfaf SELL C-XAUT-3840-181126 x2934 @ 0.1 (entry 0.08) | trail bid (peak 0.200, stop 0.100) | PnL \u2248 $0.036869",
   "18-Nov 15:01:55 \ud83d\ude80 TRAILING CHALU C-XAUT-3840-181126 | bid 0.200 (entry 0.08) | stop 0.100",
   "18-Nov 15:01:49 \ud83d\udcb0 SELL C-XAUT-3840-181126 x2933 @ 0.2 (entry 0.08) | adha becho 2x | PnL \u2248 $0.318043 | baaki 2934 par trailing",
