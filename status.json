@@ -1,6 +1,6 @@
 {
- "updated_ist": "18-Nov-2026 14:45:07",
- "updated_ts": 1794993307,
+ "updated_ist": "18-Nov-2026 14:45:41",
+ "updated_ts": 1794993341,
  "phase": "running",
  "mode": "PAPER + DEMO",
  "expiry": "18-Nov 21:30",
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": true,
- "spot": 3762.393,
+ "spot": 3762.49,
  "entries_today": 1,
  "positions": [
   {
@@ -25,14 +25,14 @@
    "qty": 5867,
    "time": "14:45:07",
    "bid": 0.06,
-   "ask": 0.08,
-   "mark": 0.16009658,
+   "ask": 0.09,
+   "mark": 0.14941283,
    "peak": null,
    "stop": null,
    "trail_at": 0.16,
    "target": null,
    "unreal": -0.1173,
-   "demo": null,
+   "demo": "C-XAUT-3840-181126",
    "slot": "subah",
    "target_qty": 10000,
    "half_sold": 0
@@ -79,5 +79,8 @@
   }
  ],
  "total_pnl": -3.3069,
- "events": []
+ "events": [
+  "18-Nov 14:45:09    \u21b3 DEMO BUY C-XAUT-3840-181126 x0 (limit 0.08) | fill price None | state cancelled",
+  "18-Nov 14:45:08 \ud83d\udfe2 BUY C-XAUT-3840-181126 x5867 @ 0.08 | subah slot (band \u00b180) | spot 3762.39 | trailing chalu hogi bid 0.160 | bid 0.06 x17532 | ask 0.08 x5867 | spread 0.020"
+ ]
 }
