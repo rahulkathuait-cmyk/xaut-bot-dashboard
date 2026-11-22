@@ -1,7 +1,7 @@
 {
- "updated_ist": "22-Nov-2026 12:55:08",
- "updated_ts": 1795332308,
- "phase": "waiting",
+ "updated_ist": "22-Nov-2026 13:00:01",
+ "updated_ts": 1795332601,
+ "phase": "no-expiry",
  "mode": "PAPER + DEMO",
  "expiry": "22-Nov 21:30",
  "window": "13:00-19:00",
@@ -63,5 +63,7 @@
   }
  ],
  "total_pnl": -2.5867,
- "events": []
+ "events": [
+  "22-Nov 13:00:01 Aaj (221126) ki XAUT expiry Delta par nahi hai. Agli expiry: 231126, 271126. Bot band."
+ ]
 }
