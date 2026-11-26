@@ -1,9 +1,9 @@
 {
- "updated_ist": "25-Nov-2026 21:24:42",
- "updated_ts": 1795622082,
+ "updated_ist": "26-Nov-2026 17:45:02",
+ "updated_ts": 1795695302,
  "phase": "running",
  "mode": "PAPER + DEMO",
- "expiry": "25-Nov 21:30",
+ "expiry": "26-Nov 21:30",
  "window": "13:00-19:00",
  "settings": {
   "band": 80.0,
@@ -14,7 +14,7 @@
   "shaam_slot": "17:00 se, band \u00b160"
  },
  "trade_ok": true,
- "spot": 3444.358,
+ "spot": 3565.015,
  "entries_today": 0,
  "positions": [],
  "closed_today": [],
@@ -63,7 +63,5 @@
   }
  ],
  "total_pnl": -2.5867,
- "events": [
-  "25-Nov 21:21:50 Dashboard update fail (GH_TOKEN/GH_REPO check karo): 502 Server Error: Bad Gateway for url: https://api.github.com/repos/rahulkathuait-cmyk/xaut-bot-dashboard/contents/status.json"
- ]
+ "events": []
 }
